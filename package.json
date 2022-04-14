@@ -1,0 +1,25 @@
+{
+  "name": "venomous",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tailwind": "postcss src/styles/tailwind.css -o src/styles/index.css --watch"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^6.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.0.7",
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "postcss-import": "^14.1.0",
+    "tailwindcss": "^3.0.23",
+    "vite": "^2.9.0"
+  }
+}
