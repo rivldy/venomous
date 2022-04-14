@@ -1,0 +1,31 @@
+.banner {
+    @apply w-full py-14 bg-gradient-to-b from-blue-800 via-blue-500 to-blue-800;
+}
+
+.banner-container {
+    @apply container text-white text-center;
+}
+
+.banner-title {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-bold;
+}
+
+.banner-lead {
+    @apply mt-6 text-lg font-semibold;
+}
+
+.banner-button {
+    @apply btn btn-jumbo btn-primary mt-6 w-full sm:w-fit;
+}
+
+.accordion {
+    @apply w-full px-4 sm:px-8 py-4 sm:py-6 border border-slate-300 rounded-lg cursor-pointer hover:shadow-md bg-white;
+}
+
+.accordion-title {
+    @apply flex justify-between items-center;
+}
+
+.accordion-lead {
+    @apply pt-4 sm:pt-6 text-base text-slate-500;
+}

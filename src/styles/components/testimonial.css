@@ -1,0 +1,16 @@
+.tabs {
+    @apply w-44 text-center text-lg py-3 px-5 bg-transparent border-b-4 hover:bg-primary-hover/10 transition-all duration-150 cursor-pointer;
+}
+
+.single-tab {
+    @apply w-44 text-center text-lg py-3 px-5 bg-transparent border-b-4 border-primary text-primary;
+}
+
+.single-tab-arrow {
+    @apply text-3xl text-primary hover:text-primary-hover transition-all duration-150
+    text-3xl text-primary hover:text-primary-hover transition-all duration-150;
+}
+
+.single-tab-arrow-disable {
+    @apply select-none text-slate-400 hover:text-slate-400;
+}

@@ -1,0 +1,3 @@
+.jumbotron {
+    @apply lg:h-screen 2xl:h-2/3 flex flex-col lg:flex-row container justify-between items-center space-y-16 lg:space-x-20 bg-white py-28 lg:pt-0;
+}
