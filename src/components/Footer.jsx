@@ -1,201 +1,8 @@
-import Download from "./Download";
+import { useSelector } from "react-redux"
 import { FaFacebookF, FaTwitter, FaLinkedin, FaYoutube, FaInstagram } from 'react-icons/fa'
+
+import Download from "./Download"
 import creditCards from '../credit-cards.svg'
-
-
-const footerLinks = [
-    {
-        title: "Venomous",
-        links: [
-            {
-                text: "About Us",
-                url: ""
-            },
-            {
-                text: "Carrer",
-                url: ""
-            },
-            {
-                text: "Free VPN Trial",
-                url: ""
-            },
-            {
-                text: "VPN Router",
-                url: ""
-            },
-            {
-                text: "Review",
-                url: ""
-            },
-            {
-                text: "Student Discount",
-                url: ""
-            },
-            {
-                text: "Where to buy",
-                url: ""
-            },
-            {
-                text: "Refer to friends",
-                url: ""
-            },
-            {
-                text: "Research Lab",
-                url: ""
-            },
-        ]
-    },
-    {
-        title: "VPN Apps",
-        links: [
-            {
-                text: "Windows",
-                url: ""
-            },
-            {
-                text: "macOS",
-                url: ""
-            },
-            {
-                text: "Linux",
-                url: ""
-            },
-            {
-                text: "Android",
-                url: ""
-            },
-            {
-                text: "iOS/iPhone/iPad",
-                url: ""
-            },
-            {
-                text: "Chrome",
-                url: ""
-            },
-            {
-                text: "Firefox",
-                url: ""
-            },
-            {
-                text: "Edge",
-                url: ""
-            },
-        ]
-    },
-    {
-        title: "Participate",
-        links: [
-            {
-                text: "What is VPN?",
-                url: ""
-            },
-            {
-                text: "IP Search",
-                url: ""
-            },
-            {
-                text: "What is my IP",
-                url: ""
-            },
-            {
-                text: "Social Responsibility",
-                url: ""
-            },
-            {
-                text: "Customer Story",
-                url: ""
-            },
-            {
-                text: "Press Area",
-                url: ""
-            },
-            {
-                text: "Becoma a Partner",
-                url: ""
-            },
-        ]
-    },
-    {
-        title: "Help",
-        links: [
-            {
-                text: "Support Center",
-                url: ""
-            },
-            {
-                text: "Tutorial",
-                url: ""
-            },
-            {
-                text: "FAQ",
-                url: ""
-            },
-            {
-                text: "Privacy Policy",
-                url: ""
-            },
-            {
-                text: "Terms of Service",
-                url: ""
-            },
-            {
-                text: "Contact Us",
-                url: ""
-            },
-        ]
-    },
-    {
-        title: "Follow Us",
-        links: [
-            {
-                icon: <FaFacebookF />,
-                text: "Facebook",
-                url: ""
-            },
-            {
-                icon: <FaTwitter />,
-                text: "Twitter",
-                url: ""
-            },
-            {
-                icon: <FaLinkedin />,
-                text: "LinkedIn",
-                url: ""
-            },
-            {
-                icon: <FaYoutube />,
-                text: "YouTube",
-                url: ""
-            },
-            {
-                icon: <FaInstagram />,
-                text: "Instagram",
-                url: ""
-            },
-        ]
-    },
-    {
-        title: "Browse",
-        links: [
-            {
-                text: "Venomous Security",
-                url: ""
-            },
-            {
-                text: "VenomousLayer",
-                url: ""
-            },
-            {
-                text: "VenomousPass",
-                url: ""
-            },
-            {
-                text: "VenomousLocker",
-                url: ""
-            },
-        ]
-    }
-]
 
 export default function Footer() {
     return (
@@ -212,6 +19,8 @@ export default function Footer() {
 
 
 function FooterLinks() {
+    const footerLinks = useSelector(state => state.footerLinks.data)
+
     return (
         <div className="w-full grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 mt-8">
             { footerLinks.map(footLink => (
@@ -223,7 +32,11 @@ function FooterLinks() {
                                 <span className={`text-white hover:text-slate-500 font-semibold ${link.icon ? 'flex items-center' : ''}`}>
                                     { link.icon && (
                                         <span className="mr-2 text-slate-500">
-                                            { link.icon }
+                                            { link.icon == "facebook" && <FaFacebookF />}
+                                            { link.icon == "twitter" && <FaTwitter />}
+                                            { link.icon == "linkedin" && <FaLinkedin />}
+                                            { link.icon == "youtube" && <FaYoutube />}
+                                            { link.icon == "instagram" && <FaInstagram />}
                                         </span>
                                     ) }
                                     {link.text}
