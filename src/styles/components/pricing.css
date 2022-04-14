@@ -1,3 +1,24 @@
 .price-list {
     @apply container bg-zinc-50 py-28;
 }
+
+.quote {
+    @apply flex flex-col items-start justify-center space-x-4 md:items-center md:justify-start md:flex-row;
+}
+
+.quote-avatar {
+    @apply w-16 overflow-hidden rounded-full;
+}
+
+.quote-container {
+    @apply flex flex-col items-start justify-center md:space-x-2 md:flex-row md:items-center md:justify-start;
+}
+
+.quote-name {
+    @apply text-lg font-semibold;
+}
+
+.quote-name-subs {
+    @apply text-sm text-slate-600;
+}
+
