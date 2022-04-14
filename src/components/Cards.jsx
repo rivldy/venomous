@@ -56,10 +56,10 @@ export function TechReviewerCard({ tech }) {
 }
 
 
-export function PriceCard({ card }) {
+export function PriceCard({ pricing }) {
     return (
         <div className="bg-white w-full px-4 pt-10 pb-6 rounded-lg relative shadow hover:shadow-xl">
-            { card.bestValue && (
+            { pricing.bestValue && (
                 <div className="absolute -top-4 inset-x-0 text-center">
                     <div className="bg-primary text-white px-5 py-1 rounded-full relative inline-block">
                         Best value
@@ -70,27 +70,27 @@ export function PriceCard({ card }) {
                 </div>
             ) }
             <div className="text-center">
-                <p className="text-base font-semibold">{card.yearPlan}</p>
+                <p className="text-base font-semibold">{pricing.yearPlan}</p>
                 <h3 className="text-5xl font-bold flex justify-center my-4">
-                    <span className="text-3xl">$</span> {card.price}</h3>
+                    <span className="text-3xl">$</span> {pricing.price}</h3>
                 <p className="text-base font-semibold">per month</p>
             </div>
             <div className="text-center my-4">
-                <div className={`text-xs font-semibold inline-block py-1 px-2 rounded-xl ${card.bestValue ? 'text-primary bg-red-200' : 'text-slate-600 bg-slate-200'}`}>Save {card.save}</div>
-                <button className={`btn btn-simple w-full my-4 ${card.bestValue ? 'btn-pricing-red' : 'btn-pricing-grey'}`}>{card.buttonText}</button>
+                <div className={`text-xs font-semibold inline-block py-1 px-2 rounded-xl ${pricing.bestValue ? 'text-primary bg-red-200' : 'text-slate-600 bg-slate-200'}`}>Save {pricing.save}</div>
+                <button className={`btn btn-simple w-full my-4 ${pricing.bestValue ? 'btn-pricing-red' : 'btn-pricing-grey'}`}>{pricing.buttonText}</button>
                 <p className="text-sm font-semibold text-slate-700">
-                    { card.discount.before || card.discount.after && (
+                    { pricing.discount.before || pricing.discount.after && (
                         <>
-                            <span className="text-slate-800 line-through mr-1">${card.discount.before}</span>
-                            <span className="text-primary mr-1">${card.discount.after}</span>
+                            <span className="text-slate-800 line-through mr-1">${pricing.discount.before}</span>
+                            <span className="text-primary mr-1">${pricing.discount.after}</span>
                         </>
                     ) }
-                    { card.discount.bill && (
-                        <span className="text-slate-700 mr-1">${card.discount.bill}</span>
+                    { pricing.discount.bill && (
+                        <span className="text-slate-700 mr-1">${pricing.discount.bill}</span>
                     ) }
-                    {card.discount.text}
+                    {pricing.discount.text}
                 </p>
-                <p className="text-sm font-semibold text-slate-700 my-2">Then, ${card.perYear}</p>
+                <p className="text-sm font-semibold text-slate-700 my-2">Then, ${pricing.perYear}</p>
                 <p className="text-sm text-slate-400">VAT may apply</p>
             </div>
         </div>
