@@ -15,7 +15,7 @@ export function AccordionFaq({ faq }) {
                 ) }
             </div>
             { isOpen && (
-                <p className="accordion-lead">{faq.answer}</p>
+                <p className="accordion-faq-lead">{faq.answer}</p>
             ) }
         </div>
     )

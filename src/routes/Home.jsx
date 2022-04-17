@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async'
 import Service from '../components/Service'
 import securityImg from '../security.svg'
 import Testimonial from '../components/Testimonial'
-import Faq from '../components/Faq'
+import { HomeFaq } from '../components/Faq'
 
 
 export default function Home() {
@@ -43,7 +43,7 @@ export default function Home() {
         {/* Testimonial */}
         <Testimonial />
         {/* Faq */}
-        <Faq />
+        <HomeFaq />
         </>
     )
 }
