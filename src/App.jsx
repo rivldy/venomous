@@ -1,6 +1,5 @@
-import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
+import ScrollToTop from './utils/ScrollToTop'
 import Home from './routes/Home'
 import Pricing from './routes/Pricing'
 import Help from './routes/Help'
@@ -12,12 +11,14 @@ function App() {
   return (
     <>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/pricing" element={<Pricing />} />
-        <Route path="/help" element={<Help />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <ScrollToTop>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/help" element={<Help />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </ScrollToTop>
       <Footer />
     </>
   )
