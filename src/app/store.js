@@ -6,6 +6,7 @@ import twittersReducer from './features/testimonial/twittersSlice'
 import techsReducer from './features/testimonial/techsSlice'
 import footerLinksReducer from './features/footer/footerLinksSlice'
 import pricingsReducer from './features/pricing/pricingsSlice'
+import featuresReducer from './features/features/featuresSlice'
 
 export default configureStore({
     reducer: {
@@ -15,6 +16,7 @@ export default configureStore({
         twitters: twittersReducer,
         techs: techsReducer,
         footerLinks: footerLinksReducer,
-        pricings: pricingsReducer
+        pricings: pricingsReducer,
+        features: featuresReducer,
     }
 })
