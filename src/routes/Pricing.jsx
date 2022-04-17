@@ -5,6 +5,7 @@ import Pricelist from "../components/Pricelist";
 import Reason from '../components/Reason';
 import Trusted from '../components/Trusted';
 import { PricingFaq } from '../components/Faq';
+import MoneyBack from '../components/MoneyBack';
 
 export default function Pricing() {
     return (
@@ -18,6 +19,7 @@ export default function Pricing() {
                 <Reason />
                 <Trusted />
                 <PricingFaq />
+                <MoneyBack />
             </section>
         </>
     )
