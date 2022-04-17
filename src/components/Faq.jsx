@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { AccordionFaq } from "./Accordion";
 
-const faqs = [
+const homeFaqs = [
     {
         question: "What is Venomous?",
         answer: "Venomous is a VPN provider company whose main goal is to respect the freedom of choice of its customers, make technological innovations, and build a free and safer internet for everyone. With cutting-edge features, transparency and legitimate concern for its users, Venomous is, in short, the best VPN in the world."
@@ -16,7 +16,7 @@ const faqs = [
     }
 ]
 
-export default function Faq() {
+export function HomeFaq() {
     return (
         <section className="w-full bg-zinc-50">
             <div className="banner">
@@ -32,7 +32,7 @@ export default function Faq() {
                 <div className="container">
                     <h2 className="text-4xl font-bold text-center mb-10">Frequently Asked Questions</h2>
                     <div className="w-full lg:w-4/5 xl:w-2/3 mx-auto flex flex-col space-y-5">
-                        { faqs.map(faq => (
+                        { homeFaqs.map(faq => (
                             <AccordionFaq faq={faq} key={faq.question} />
                         )) }
                     </div>
