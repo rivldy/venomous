@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import { useSelector } from "react-redux";
+import { useSelector } from "react-redux"
+import { Link } from 'react-router-dom'
 
-import { FeatureCard } from "./Cards";
+import { FeatureCard } from "./Cards"
 import SafeImg from '../safe.svg'
 import VaultImg from '../vault.svg'
 import PaymentsImg from '../payments.svg'
@@ -20,7 +21,9 @@ export default function Features() {
                         <FeatureCard key={index} feature={feature} />
                     )) }
                 </div>
-                <button className="mt-8 btn btn-jumbo btn-primary">Get Venomous</button>
+                <Link to="/pricing">
+                    <button className="mt-8 btn btn-jumbo btn-primary">Get Venomous</button>
+                </Link>
             </div>
             <div className="container flex flex-col mt-20 lg:space-x-10 lg:flex-row lg:items-start lg:justify-between">
                 <h2 className="lg:hidden text-3xl font-bold text-center mb-8">Online security and privacy made simple</h2>
