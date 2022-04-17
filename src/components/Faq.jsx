@@ -32,8 +32,8 @@ export function HomeFaq() {
                 <div className="container">
                     <h2 className="text-4xl font-bold text-center mb-10">Frequently Asked Questions</h2>
                     <div className="w-full lg:w-4/5 xl:w-2/3 mx-auto flex flex-col space-y-5">
-                        { homeFaqs.map(faq => (
-                            <AccordionFaq faq={faq} key={faq.question} />
+                        { homeFaqs.map((faq, index) => (
+                            <AccordionFaq faq={faq} key={index} />
                         )) }
                     </div>
                 </div>
