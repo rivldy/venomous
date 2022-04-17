@@ -1,9 +1,4 @@
-![Venomous Logo](./src//logo.svg)
-
-### Table of Contents
-- [What's in this repository](https://github.com/rivldy/venomous#whats-in-this-repository-whats-in-this-repo)
-- [What's technology is used in this project](https://github.com/rivldy/venomous#whats-technology-is-used-in-this-project-whats-technology-is-used)
-- [Who contributed to this project](https://github.com/rivldy/venomous#who-contributed-to-this-project-who-contributed)
+![Venomous Logo](./src/logo.svg)
 
 ---
 
