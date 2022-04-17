@@ -40,7 +40,7 @@ export default function Features() {
                         <div className={`w-1 self-stretch ${indexAccord == 0 ? 'bg-primary' : 'bg-slate-400'}`}></div>
                         <div>
                             <h3 className="text-2xl font-semibold">One account, all of your devices</h3>
-                            <p className={`text-lg ${indexAccord == 0 ? 'block' : 'hidden'}`}>No need to buy VPN subscriptions separately for your phone and PC. NordVPN secures up to 6 devices and is compatible with Windows, macOS, Linux, Android, iOS, and even your Wi-Fi router.</p>
+                            <p className={`text-lg ${indexAccord == 0 ? 'block' : 'hidden'}`}>No need to buy VPN subscriptions separately for your phone and PC. Venomous secures up to 6 devices and is compatible with Windows, macOS, Linux, Android, iOS, and even your Wi-Fi router.</p>
                         </div>
                     </div>
                     {/* Index 1 */}
@@ -48,7 +48,7 @@ export default function Features() {
                         <div className={`w-1 self-stretch ${indexAccord == 1 ? 'bg-primary' : 'bg-slate-400'}`}></div>
                         <div>
                             <h3 className="text-2xl font-semibold">No risk to you or your wallet</h3>
-                            <p className={`text-lg ${indexAccord == 1 ? 'block' : 'hidden'}`}>Unsure about NordVPN prices or how to buy a VPN subscription? Contact customer support 24/7. And remember — your purchase is always safe with our 30-day money-back guarantee.</p>
+                            <p className={`text-lg ${indexAccord == 1 ? 'block' : 'hidden'}`}>Unsure about Venomous prices or how to buy a VPN subscription? Contact customer support 24/7. And remember — your purchase is always safe with our 30-day money-back guarantee.</p>
                         </div>
                     </div>
                     {/* Index 2 */}
@@ -65,13 +65,13 @@ export default function Features() {
                 { indexAccord == 0 && (
                     <div className="mt-10 text-center lg:hidden">
                         <h3 className="text-2xl font-semibold">One account, all of your devices</h3>
-                        <p className="mt-4 text-lg">No need to buy VPN subscriptions separately for your phone and PC. NordVPN secures up to 6 devices and is compatible with Windows, macOS, Linux, Android, iOS, and even your Wi-Fi router.</p>
+                        <p className="mt-4 text-lg">No need to buy VPN subscriptions separately for your phone and PC. Venomous secures up to 6 devices and is compatible with Windows, macOS, Linux, Android, iOS, and even your Wi-Fi router.</p>
                     </div>
                 ) }
                 { indexAccord == 1 && (
                     <div className="mt-10 text-center lg:hidden">
                         <h3 className="text-2xl font-semibold">No risk to you or your wallet</h3>
-                        <p className="mt-4 text-lg">Unsure about NordVPN prices or how to buy a VPN subscription? Contact customer support 24/7. And remember — your purchase is always safe with our 30-day money-back guarantee.</p>
+                        <p className="mt-4 text-lg">Unsure about Venomous prices or how to buy a VPN subscription? Contact customer support 24/7. And remember — your purchase is always safe with our 30-day money-back guarantee.</p>
                     </div>
                 ) }
                 { indexAccord == 2 && (
@@ -97,19 +97,6 @@ export default function Features() {
                     ></div>
                 </div>
             </div>
-        </div>
-    )
-}
-
-
-function MobileFeatureCard(feature) {
-    return (
-        <div className="flex flex-col items-center justify-center">
-            <div className="w-full">
-                <img src={feature.img} alt={feature.title} />
-            </div>
-            <h3>{feature.title}</h3>
-            <p>{feature.desc}</p>
         </div>
     )
 }
