@@ -18,7 +18,7 @@
     @apply btn btn-jumbo btn-primary mt-6 w-full sm:w-fit;
 }
 
-.accordion {
+.accordion-faq {
     @apply w-full px-4 sm:px-8 py-4 sm:py-6 border border-slate-300 rounded-lg cursor-pointer hover:shadow-md bg-white;
 }
 
