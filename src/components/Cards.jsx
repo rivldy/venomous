@@ -106,3 +106,18 @@ export function FeatureCard({ feature }) {
         </div>
     )
 }
+
+
+export function ReasonCard({ reason }) {
+    return (
+        <div className="flex flex-col space-y-5">
+            <div className="w-20">
+                <span className="text-primary text-4xl">
+                    { reason.icon }
+                </span>
+            </div>
+            <h4 className="text-xl font-semibold">{ reason.title }</h4>
+            <p className="text-base">{ reason.desc }</p>
+        </div>
+    )
+}

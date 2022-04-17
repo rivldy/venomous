@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet-async'
 
 import Features from "../components/Features";
 import Pricelist from "../components/Pricelist";
+import Reason from '../components/Reason';
 
 export default function Pricing() {
     return (
@@ -12,6 +13,7 @@ export default function Pricing() {
             <section className="w-full bg-white">
                 <Pricelist />
                 <Features />
+                <Reason />
             </section>
         </>
     )
