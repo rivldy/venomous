@@ -22,10 +22,10 @@
     @apply w-full px-4 sm:px-8 py-4 sm:py-6 border border-slate-300 rounded-lg cursor-pointer hover:shadow-md bg-white;
 }
 
-.accordion-title {
+.accordion-faq-title {
     @apply flex justify-between items-center;
 }
 
-.accordion-lead {
+.accordion-faq-lead {
     @apply pt-4 sm:pt-6 text-base text-slate-500;
 }

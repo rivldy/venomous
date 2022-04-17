@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Accordion from "./Accordion";
+import { AccordionFaq } from "./Accordion";
 
 const faqs = [
     {
@@ -33,7 +33,7 @@ export default function Faq() {
                     <h2 className="text-4xl font-bold text-center mb-10">Frequently Asked Questions</h2>
                     <div className="w-full lg:w-4/5 xl:w-2/3 mx-auto flex flex-col space-y-5">
                         { faqs.map(faq => (
-                            <Accordion faq={faq} key={faq.question} />
+                            <AccordionFaq faq={faq} key={faq.question} />
                         )) }
                     </div>
                 </div>
