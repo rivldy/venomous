@@ -4,6 +4,7 @@ import Features from "../components/Features";
 import Pricelist from "../components/Pricelist";
 import Reason from '../components/Reason';
 import Trusted from '../components/Trusted';
+import { PricingFaq } from '../components/Faq';
 
 export default function Pricing() {
     return (
@@ -16,6 +17,7 @@ export default function Pricing() {
                 <Features />
                 <Reason />
                 <Trusted />
+                <PricingFaq />
             </section>
         </>
     )
