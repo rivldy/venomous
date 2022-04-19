@@ -27,10 +27,13 @@ export default function Sidebar({ showSidebar, setShowSidebar }) {
                         <Link className="nav-link-sidebar" to="/pricing">Pricing</Link>
                     </li>
                     <li>
-                        <Link className="nav-link-sidebar" to="/help">Customer Service</Link>
+                        <Link className="nav-link-sidebar" to="/blog">Blog</Link>
                     </li>
                     <li>
                         <Link className="nav-link-sidebar" to="/contact">Contact</Link>
+                    </li>
+                    <li>
+                        <Link className="nav-link-sidebar" to="/login">Log In</Link>
                     </li>
                     <li>
                         <Link className="nav-link-sidebar text-primary" to="/">Get Venomous</Link>
