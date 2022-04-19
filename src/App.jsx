@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
-import ScrollToTop from './utils/ScrollToTop'
+import RouteChange from './utils/RouteChange'
 import Home from './routes/Home'
 import Pricing from './routes/Pricing'
 import Help from './routes/Help'
@@ -11,14 +11,14 @@ function App() {
   return (
     <>
       <Header />
-      <ScrollToTop>
+      <RouteChange>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/help" element={<Help />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-      </ScrollToTop>
+      </RouteChange>
       <Footer />
     </>
   )
