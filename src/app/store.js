@@ -7,6 +7,7 @@ import techsReducer from './features/testimonial/techsSlice'
 import footerLinksReducer from './features/footer/footerLinksSlice'
 import pricingsReducer from './features/pricing/pricingsSlice'
 import featuresReducer from './features/features/featuresSlice'
+import sidebarReducer from './features/header/sidebarSlice'
 
 export default configureStore({
     reducer: {
@@ -18,5 +19,6 @@ export default configureStore({
         footerLinks: footerLinksReducer,
         pricings: pricingsReducer,
         features: featuresReducer,
+        sidebar: sidebarReducer
     }
 })
