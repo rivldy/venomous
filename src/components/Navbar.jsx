@@ -1,12 +1,16 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { setShowSidebar } from '../app/features/header/sidebarSlice'
+
 import logo from '../logo.svg'
 
-export default function Navbar({ setShowSidebar }) {
+export default function Navbar() {
     const [isScroll, setIsScroll] = useState(false)
+    const dispatch = useDispatch()
     
     const showSidebarHandler = () => {
-        setShowSidebar(true)
+        dispatch(setShowSidebar())
 
         // Disables Background Scrolling whilst the SideDrawer/Modal is open
         if (typeof window != 'undefined' && window.document) {
