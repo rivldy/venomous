@@ -1,9 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit"
 
-import certificationImg from '../../../certification.svg'
-import justbrowsingImg from '../../../just_browsing.svg'
-import powerfulImg from '../../../powerful.svg'
-import personaldataImg from '../../../personal_data.svg'
+import certificationImg from '../../../images/certification.svg'
+import justbrowsingImg from '../../../images/just_browsing.svg'
+import powerfulImg from '../../../images/powerful.svg'
+import personaldataImg from '../../../images/personal_data.svg'
 
 const services = [
     {

@@ -3,9 +3,9 @@ import { useSelector } from "react-redux"
 import { Link } from 'react-router-dom'
 
 import { FeatureCard } from "./Cards"
-import SafeImg from '../safe.svg'
-import VaultImg from '../vault.svg'
-import PaymentsImg from '../payments.svg'
+import SafeImg from '../images/safe.svg'
+import VaultImg from '../images/vault.svg'
+import PaymentsImg from '../images/payments.svg'
 
 export default function Features() {
     const [indexAccord, setIndexAccord] = useState(0)

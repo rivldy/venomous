@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 
 import Service from '../components/Service'
-import securityImg from '../security.svg'
+import securityImg from '../images/security.svg'
 import Testimonial from '../components/Testimonial'
 import { HomeFaq } from '../components/Faq'
 
