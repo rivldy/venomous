@@ -2,7 +2,7 @@ import { useSelector } from "react-redux"
 import { FaFacebookF, FaTwitter, FaLinkedin, FaYoutube, FaInstagram } from 'react-icons/fa'
 
 import Download from "./Download"
-import creditCards from '../credit-cards.svg'
+import creditCards from '../images/credit-cards.svg'
 
 export default function Footer() {
     return (

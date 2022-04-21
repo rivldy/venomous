@@ -1,5 +1,5 @@
-import appStore from '../app-store-logo.svg'
-import googlePlay from '../google-play-logo.svg'
+import appStore from '../images/app-store-logo.svg'
+import googlePlay from '../images/google-play-logo.svg'
 
 export default function Download() {
     return (

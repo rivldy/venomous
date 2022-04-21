@@ -1,4 +1,4 @@
-import WalletImg from '../wallet.svg'
+import WalletImg from '../images/wallet.svg'
 
 export default function MoneyBack() {
     return (
