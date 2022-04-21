@@ -79,7 +79,7 @@ export function PriceCard({ pricing }) {
                 <div className={`text-xs font-semibold inline-block py-1 px-2 rounded-xl ${pricing.bestValue ? 'text-primary bg-red-200' : 'text-slate-600 bg-slate-200'}`}>Save {pricing.save}</div>
                 <button className={`btn btn-simple w-full my-4 ${pricing.bestValue ? 'btn-pricing-red' : 'btn-pricing-grey'}`}>{pricing.buttonText}</button>
                 <p className="text-sm font-semibold text-slate-700">
-                    { pricing.discount.before || pricing.discount.after && (
+                    { (pricing.discount.before || pricing.discount.after) && (
                         <>
                             <span className="mr-1 line-through text-slate-800">${pricing.discount.before}</span>
                             <span className="mr-1 text-primary">${pricing.discount.after}</span>
@@ -112,7 +112,7 @@ export function ReasonCard({ reason }) {
     return (
         <div className="flex flex-col space-y-5">
             <div className="w-20">
-                <span className="text-primary text-4xl">
+                <span className="text-4xl text-primary">
                     { reason.icon }
                 </span>
             </div>
