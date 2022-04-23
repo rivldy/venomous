@@ -3,7 +3,7 @@ import RouteChange from './utils/RouteChange'
 import Home from './routes/Home'
 import Pricing from './routes/Pricing'
 import Blog from './routes/Blog'
-import Contact from './routes/Contact'
+import Download from './routes/Download'
 import Login from './routes/Login'
 import NotFound from './routes/NotFound'
 import Header from './components/Header'
@@ -18,7 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/download" element={<Download />} />
           <Route path="/login" element={<Login />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

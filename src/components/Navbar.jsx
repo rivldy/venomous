@@ -39,7 +39,7 @@ export default function Navbar() {
                             <Link className="nav-link" to="/blog">Blog</Link>
                         </li>
                         <li>
-                            <Link className="nav-link" to="/contact">Contact</Link>
+                            <Link className="nav-link" to="/download">Download</Link>
                         </li>
                     </ul>
                 </div>

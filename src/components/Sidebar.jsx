@@ -28,7 +28,7 @@ export default function Sidebar() {
                         <Link className="nav-link-sidebar" to="/blog">Blog</Link>
                     </li>
                     <li>
-                        <Link className="nav-link-sidebar" to="/contact">Contact</Link>
+                        <Link className="nav-link-sidebar" to="/download">Download</Link>
                     </li>
                     <li>
                         <Link className="nav-link-sidebar" to="/login">Log In</Link>
