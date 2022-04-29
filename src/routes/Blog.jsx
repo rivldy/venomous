@@ -1,29 +1,21 @@
 import { useState, useEffect } from "react"
 import { Helmet } from "react-helmet-async"
+import { useSelector } from "react-redux"
 import Post from "../components/Post"
 
 export default function Blog() {
     const [posts, setPosts] = useState([])
-    const [error, setError] = useState("")
     
-    const apiKey = "69639fa3f23a414885b89d88c029dbde"
-    const url = "https://newsapi.org/v2/everything?q=internet&searchIn=title&pageSize=30"
-
+    const postsData = useSelector(state => state.posts.data)
     useEffect(() => {
-        fetch(url, {
-            headers: {
-                "X-Api-Key": apiKey
-            }
-        })
-        .then(response => {
-            if(response.ok) return response.json()
-            throw new Error('something went wrong while requesting posts')
-        })
-        .then(posts => setPosts(posts.articles))
-        .catch(err => setError(err.message))
-    }, [])
+        const postsTimeout = setTimeout(() => {
+            setPosts(postsData)
+        }, 1000)
 
-    if(error) return <h1>{error}</h1>
+        return () => {
+            clearTimeout(postsTimeout)
+        }
+    }, [])
     
     return (
         <>

@@ -4,9 +4,10 @@ export default function Pagination({ data, RenderComponent, title, pageLimit, da
     const [pages] = useState(Math.round(data.length / dataLimit))
     const [currentPage, setCurrentPage] = useState(1)
 
-    useEffect(() => {
-        window.scrollTo({ behavior: 'smooth', top: '0px' });
-    }, [currentPage])
+    // useEffect(() => {
+    //     // Go to top when page change
+    //     window.scrollTo({ behavior: 'smooth', top: '0px' });
+    // }, [currentPage])
     
     function goToNextPage() {
         setCurrentPage((page) => page + 1)

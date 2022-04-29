@@ -128,9 +128,9 @@ export function PostCard({ post }) {
         <a href={post.url} target="_blank" className="flex flex-col items-start justify-between px-5 py-3 my-3 space-y-5 bg-white border rounded-md shadow-sm border-slate-200 hover:shadow-lg">
             <h3 className="text-lg font-semibold">{post.title}</h3>
             <div className="flex flex-col items-start justify-center">
-                <span className="text-sm text-slate-600">{post.author ? post.author : post.source.name}</span>
-                <span className="text-sm font-semibold text-slate-600">{post.source.name}</span>
-                <span className="text-sm text-slate-600">Published at {post.publishedAt.slice(0, 10)}</span>
+                <span className="text-sm text-slate-600">{post.author ? post.author : post.source}</span>
+                <span className="text-sm font-semibold text-slate-600">{post.source}</span>
+                <span className="text-sm text-slate-600">Published at {post.publishedAt}</span>
             </div>
         </a>
     )
